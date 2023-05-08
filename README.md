@@ -46,20 +46,24 @@ poetry install ....
 
 ```py3
 import intellx
-import intellx.foundational_models as ifm
+from intellx.models import core, specialized
 from intellx.datasets import instruct-mpt, dolly, oasst
 
 # Easy to use models 
-# Usecases: 
+# Example: 
 # {0: pre-train, 1: fine-tune}
 
-# Load pre-trained model
-model = ifm.llms.load_model(model = 'vicuna-13b-delta', quantized = True, mode = 1)
+# Load a pre-trained model
+model = core.llms.load_model(model = 'vicuna-13b-delta', quantized = True, mode = 1)
 
-# Usecases: 
+# Train a model
+# Example: 
 # {0: train from scratch, 1: fine-tune}
 model.train_model(model = 'bloom-7b', quantized = False, mode = 0, save_checkpoints = True)
 
+# Use a specialized model for AdTech usecase
+# Example:
+model = specialized.load_model(model = 'bloom7b-intellx-adtech-S1')
 
 # Save model 
 model.save_model(format = ' .h5')
