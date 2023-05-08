@@ -1,0 +1,6 @@
+## For manual installation
+transformers
+hf-hub
+openai
+torch-gpu
+langchain
