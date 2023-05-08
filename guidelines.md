@@ -9,7 +9,7 @@
 - Jira tickets
 - Projects/Tasks GitHub
 
-2. **Everyone works on their remote branch and create PR for their code to be merged**
+2. **Everyone works on their remote branch and create PR for their code to be merged, nobody pushes directly to main**
 
 - Branch name: <user_name>_dev (same as that in the server to avoid confusions)
 - PR template mentions issues and tags assignees
