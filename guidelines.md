@@ -6,7 +6,7 @@
 1. Useful links: 
 - [Issue Tracker](https://github.com/snehilsanyal/IntellX/issues) 
 - Slack Channel
-- Zira tickets
+- Jira tickets
 - Projects/Tasks GitHub
 
 2. **Everyone works on their remote branch and create PR for their code to be merged**
